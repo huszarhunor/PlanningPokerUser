@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -64,6 +65,7 @@ public class VoteActivity extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Toast.makeText(getApplicationContext(),"Successful vote",Toast.LENGTH_SHORT).show();
                 myRef.child("Aktiv").child(code).child("Szavazatok").child("1").child(name).setValue("1");
             }
         });
@@ -71,6 +73,7 @@ public class VoteActivity extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Toast.makeText(getApplicationContext(),"Successful vote",Toast.LENGTH_SHORT).show();
                 myRef.child("Aktiv").child(code).child("Szavazatok").child("2").child(name).setValue("2");
             }
         });
@@ -78,6 +81,7 @@ public class VoteActivity extends AppCompatActivity {
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Toast.makeText(getApplicationContext(),"Successful vote",Toast.LENGTH_SHORT).show();
                 myRef.child("Aktiv").child(code).child("Szavazatok").child("3").child(name).setValue("3");
             }
         });
@@ -85,6 +89,7 @@ public class VoteActivity extends AppCompatActivity {
         button4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Toast.makeText(getApplicationContext(),"Successful vote",Toast.LENGTH_SHORT).show();
                 myRef.child("Aktiv").child(code).child("Szavazatok").child("4").child(name).setValue("4");
             }
         });
@@ -92,6 +97,7 @@ public class VoteActivity extends AppCompatActivity {
         button5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Toast.makeText(getApplicationContext(),"Successful vote",Toast.LENGTH_SHORT).show();
                 myRef.child("Aktiv").child(code).child("Szavazatok").child("5").child(name).setValue("5");
             }
         });
