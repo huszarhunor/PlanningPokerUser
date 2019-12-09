@@ -17,25 +17,26 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <EditText
-            android:id="@+id/editTextName"
+            android:id="@+id/editName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name" />
+            android:hint="Name"
+            android:inputType="textPersonName" />
 
         <EditText
             android:id="@+id/editTextCode"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name" />
+            android:hint="Code"
+            android:inputType="textPersonName" />
 
         <Button
             android:id="@+id/buttonEnter"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Enter" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

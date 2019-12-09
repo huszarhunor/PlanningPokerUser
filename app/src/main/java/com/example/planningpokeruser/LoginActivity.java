@@ -28,7 +28,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 code = editTextCode.getText().toString();
-                name = editTextCode.getText().toString();
+                name = editTextName.getText().toString();
                 Intent intent = new Intent(getApplicationContext(), VoteActivity.class);
                 intent.putExtra("codeString",code);
                 intent.putExtra("nameString",name);
@@ -38,7 +38,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void initialize() {
-        editTextName = findViewById(R.id.editTextName);
+        editTextName = findViewById(R.id.editName);
         editTextCode = findViewById(R.id.editTextCode);
         buttonEnter = findViewById(R.id.buttonEnter);
     }
