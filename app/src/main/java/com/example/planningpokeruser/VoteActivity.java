@@ -49,13 +49,13 @@ public class VoteActivity extends AppCompatActivity {
 
         myRef.child("Aktiv").child(code).child("Kerdes").addValueEventListener(new ValueEventListener() {
             @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+            public void onDataChange(DataSnapshot dataSnapshot) {
                 String question = dataSnapshot.getValue().toString();
                 textViewQuestion.setText(question);
             }
 
             @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
+            public void onCancelled(DatabaseError databaseError) {
 
             }
         });
@@ -65,7 +65,7 @@ public class VoteActivity extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"Successful vote",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"Sikeres szavazás",Toast.LENGTH_SHORT).show();
                 myRef.child("Aktiv").child(code).child("Szavazatok").child("1").child(name).setValue("1");
             }
         });
@@ -73,7 +73,7 @@ public class VoteActivity extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"Successful vote",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"Sikeres szavazás",Toast.LENGTH_SHORT).show();
                 myRef.child("Aktiv").child(code).child("Szavazatok").child("2").child(name).setValue("2");
             }
         });
@@ -81,7 +81,7 @@ public class VoteActivity extends AppCompatActivity {
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"Successful vote",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"Sikeres szavazás",Toast.LENGTH_SHORT).show();
                 myRef.child("Aktiv").child(code).child("Szavazatok").child("3").child(name).setValue("3");
             }
         });
@@ -89,7 +89,7 @@ public class VoteActivity extends AppCompatActivity {
         button4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"Successful vote",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"Sikeres szavazás",Toast.LENGTH_SHORT).show();
                 myRef.child("Aktiv").child(code).child("Szavazatok").child("4").child(name).setValue("4");
             }
         });
@@ -97,7 +97,7 @@ public class VoteActivity extends AppCompatActivity {
         button5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"Successful vote",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"Sikeres szavazás",Toast.LENGTH_SHORT).show();
                 myRef.child("Aktiv").child(code).child("Szavazatok").child("5").child(name).setValue("5");
             }
         });
